@@ -5,7 +5,7 @@ Ping the servo to check if it is ready.
 #include <SCServo.h>
 
 SMS_STS sms_sts;
-// the uart used to control servos.
+// the UART used to control servos.
 // GPIO 18 - S_RXD, GPIO 19 - S_TXD, as default.
 #define S_RXD 18
 #define S_TXD 19

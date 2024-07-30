@@ -4,7 +4,7 @@ and if testing other models of SCS series servos
 please change the appropriate position, speed and delay parameters.
 */
 
-// the uart used to control servos.
+// the UART used to control servos.
 // GPIO 18 - S_RXD, GPIO 19 - S_TXD, as default.
 #define S_RXD 18
 #define S_TXD 19
@@ -23,13 +23,13 @@ void setup()
 
 void loop()
 {
-  sc.RegWritePos(1, 1000, 0, 1500);//Servo(ID1) moves at max speed=1500, moves to position=1000.
-  sc.RegWritePos(2, 1000, 0, 1500);//Servo(ID2) moves at max speed=1500, moves to position=1000.
-  sc.RegWriteAction();//Start moving.
-  delay(754);//[(P1-P0)/V]*1000+100
+  sc.RegWritePos(1, 1000, 0, 1500); // Servo(ID1) moves at max speed=1500, moves to position=1000.
+  sc.RegWritePos(2, 1000, 0, 1500); // Servo(ID2) moves at max speed=1500, moves to position=1000.
+  sc.RegWriteAction(); // Start moving.
+  delay(754); // [(P1-P0)/V]*1000+100
   
-  sc.RegWritePos(1, 20, 0, 1500);//Servo(ID1) moves at max speed=1500, moves to position=20.
-  sc.RegWritePos(2, 20, 0, 1500);//Servo(ID2) moves at max speed=1500, moves to position=20.
-  sc.RegWriteAction();//Start moving.
-  delay(754);//[(P1-P0)/V]*1000+100
+  sc.RegWritePos(1, 20, 0, 1500); // Servo(ID1) moves at max speed=1500, moves to position=20.
+  sc.RegWritePos(2, 20, 0, 1500); // Servo(ID2) moves at max speed=1500, moves to position=20.
+  sc.RegWriteAction(); // Start moving.
+  delay(754); // [(P1-P0)/V]*1000+100
 }

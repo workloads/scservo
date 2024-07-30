@@ -2,7 +2,7 @@
 Ping() to test a servo on the bus is ready.
 */
 
-// the uart used to control servos.
+// the UART used to control servos.
 // GPIO 18 - S_RXD, GPIO 19 - S_TXD, as default.
 #define S_RXD 18
 #define S_TXD 19

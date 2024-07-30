@@ -8,7 +8,7 @@ please change the appropriate position, speed and delay parameters.
 
 SMS_STS st;
 
-// the uart used to control servos.
+// the UART used to control servos.
 // GPIO 18 - S_RXD, GPIO 19 - S_TXD, as default.
 #define S_RXD 18
 #define S_TXD 19
@@ -23,9 +23,9 @@ void setup()
 
 void loop()
 {
-  st.WritePosEx(1, 4095, 3400, 50);//servo(ID1) speed=3400，acc=50，move to position=4095.
+  st.WritePosEx(1, 4095, 3400, 50); // servo(ID1) speed=3400，acc=50，move to position=4095.
   delay(2000);
   
-  st.WritePosEx(1, 2000, 1500, 50);//servo(ID1) speed=3400，acc=50，move to position=2000.
+  st.WritePosEx(1, 2000, 1500, 50); // servo(ID1) speed=3400，acc=50，move to position=2000.
   delay(2000);
 }

@@ -2,7 +2,7 @@
 example for changing ID.
 */
 
-// the uart used to control servos.
+// the UART used to control servos.
 // GPIO 18 - S_RXD, GPIO 19 - S_TXD, as default.
 #define S_RXD 18
 #define S_TXD 19
@@ -20,9 +20,9 @@ void setup()
   sc.pSerial = &Serial1;
   delay(1000);
 
-  sc.unLockEprom(ID_ChangeFrom);//unlock EPROM-SAFE
-  sc.writeByte(ID_ChangeFrom, SCSCL_ID, ID_Changeto);//ID
-  sc.LockEprom(ID_Changeto);// EPROM-SAFE locked
+  sc.unLockEprom(ID_ChangeFrom); // unlock EPROM-SAFE
+  sc.writeByte(ID_ChangeFrom, SCSCL_ID, ID_Changeto);// ID
+  sc.LockEprom(ID_Changeto); // EPROM-SAFE locked
 }
 
 void loop()

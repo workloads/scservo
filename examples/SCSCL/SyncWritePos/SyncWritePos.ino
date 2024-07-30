@@ -4,7 +4,7 @@ and if testing other models of SCS series servos
 please change the appropriate position, speed and delay parameters.
 */
 
-// the uart used to control servos.
+// the UART used to control servos.
 // GPIO 18 - S_RXD, GPIO 19 - S_TXD, as default.
 #define S_RXD 18
 #define S_TXD 19
@@ -32,13 +32,13 @@ void loop()
   Position[1] = 1000;
   Speed[0] = 1500;
   Speed[1] = 1500;
-  sc.SyncWritePos(ID, 2, Position, 0, Speed);//Servo((ID1/ID2)) moves at max speed=1500, moves to position=1000.
-  delay(754);//[(P1-P0)/V]*1000+100
+  sc.SyncWritePos(ID, 2, Position, 0, Speed); // Servo((ID1/ID2)) moves at max speed=1500, moves to position=1000.
+  delay(754); // [(P1-P0)/V]*1000+100
 
   Position[0] = 20;
   Position[1] = 20;
   Speed[0] = 1500;
   Speed[1] = 1500;
-  sc.SyncWritePos(ID, 2, Position, 0, Speed);//Servo((ID1/ID2)) moves at max speed=1500, moves to position=20.
-  delay(754);//[(P1-P0)/V]*1000+100
+  sc.SyncWritePos(ID, 2, Position, 0, Speed); // Servo((ID1/ID2)) moves at max speed=1500, moves to position=20.
+  delay(754); // [(P1-P0)/V]*1000+100
 }
