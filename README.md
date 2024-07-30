@@ -8,6 +8,7 @@
 * [SCServo](#scservo)
   * [Table of Contents](#table-of-contents)
   * [Usage](#usage)
+  * [Notes](#notes)
   * [Contributors](#contributors)
   * [License](#license)
 <!-- TOC -->
@@ -22,10 +23,9 @@ Install libraries with **`Library Manager`**: ArduinoJson, LittleFS, Adafruit_SS
 
 ### Basic Use
 You can send JSON command to robot via UART/USB@115200 or Http Request/Web App.
+## Notes
 
-To ensure compatibility with various types of robots. You can configure the robot by entering the following command:
 
-    {"T":900,"main":2,"module":2}
 ## Contributors
 
 For a list of current (and past) contributors to this repository, see [GitHub](https://github.com/workloads/scservo/graphs/contributors).
