@@ -1,8 +1,6 @@
 /*
  * INST.h
- * 飞特串行舵机协议指令定义
- * 日期: 2021.3.11
- * 作者: 
+ * FIT serial servo protocol command definition
  */
 
 #ifndef _INST_H
@@ -23,7 +21,7 @@ typedef	long s32;
 #define INST_SYNC_READ 0x82
 #define INST_SYNC_WRITE 0x83
 
-//波特率定义
+// Baud rate definition
 #define	_1M 0
 #define	_0_5M 1
 #define	_250K 2

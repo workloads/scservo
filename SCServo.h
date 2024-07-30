@@ -1,8 +1,6 @@
 /*
  * SCServo.h
- * 飞特串行舵机接口
- * 日期: 2021.3.11
- * 作者: 
+ * FIT serial servo interface
  */
 
 #ifndef _SCSERVO_H

@@ -1,8 +1,6 @@
 ﻿/*
  * SMS_STS.h
- * 飞特SMS/STS系列串行舵机应用层程序
- * 日期: 2021.3.11
- * 作者: 
+ * FIT SMS/STS series serial servo application layer program
  */
 
 #ifndef _SMS_STS_H

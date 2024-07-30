@@ -1,8 +1,6 @@
 ﻿/*
  * SMS_STS.cpp
- * 飞特SMS_STS系列串行舵机应用层程序
- * 日期: 2020.6.17
- * 作者: 
+* FIT SMS_STS series serial servo application layer program
  */
 
 #include "SMS_STS.h"
@@ -268,4 +266,3 @@ int SMS_STS::ReadCurrent(int ID)
 	}	
 	return Current;
 }
-
