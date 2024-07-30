@@ -15,16 +15,25 @@
 
 ## Usage
 
-The program running on the lower computer is either named [ugv_base_ros](https://github.com/effectsmachine/ugv_base_ros.git) or [ugv_base_general](https://github.com/effectsmachine/ugv_base_general.git) depending on the type of robot driver being used.  
+The `SCServo` library may be installed like any other Arduino library. A tutorial is available on [docs.arduino.com](https://docs.arduino.cc/software/ide-v2/tutorials/ide-v2-installing-a-library/).
 
-Copy `SCServo` folder into `C:\Users\[username]\AppData\Local\Arduino15\libraries\`
+Alternatively, the contents of this repository may be downloaded and installed manually by copying them to the `libraries` folder of the Arduino IDE.
 
-Install libraries with **`Library Manager`**: ArduinoJson, LittleFS, Adafruit_SSD1306, INA219_WE, ESP32Encoder, PID_v2, SimpleKalmanFilter, Adafruit_ICM20X, Adafruit_ICM20948, Adafruit_Sensor
-
-### Basic Use
-You can send JSON command to robot via UART/USB@115200 or Http Request/Web App.
 ## Notes
 
+1.) The code for the `SCServo` library is divided into the following parts:
+
+- communication layer: [SCS.cpp](./SCS.cpp)
+- hardware interface layer: [SCSerial.cpp](./SCSerial.cpp)
+- application layer: 
+  - corresponds to the three series of FIT servos
+  - `SCSCL` application layer program: [SCSCL.h](./SCSCL.h) and [SCSCL.cpp](./SCSCL.cpp)
+  - `SMSBL`, `SMSCL`, and `STSCL` application layer program: [SMS_STS.h](./SMS_STS.h) and [SMS_STS.cpp](./SMS_STS.cpp)
+- instruction definition header file: [INST.h](./INST.h)
+- communication layer program: [SCS.h](./SCS.h) and [SCS.cpp](./SCS.cpp)
+- hardware interface program: [SCSerial.h](./SCSerial.h) and [SCSerial.cpp](./SCSerial.cpp)
+
+2.) There are differences in the memory table definitions of different series of servos.
 
 ## Contributors
 
