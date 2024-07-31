@@ -40,7 +40,9 @@ arduino-cli \
 
 === Notes
 
-1.) The code for the `+SCServo+` library is divided into the following
+1.) The code in this repository is based on the `+SCServo+` library, initially made available by https://github.com/waveshareteam/ugv_base_general[@waveshareteam].
+
+2.) The code for the `+SCServo+` library is divided into the following
 parts:
 
 * communication layer: link:src/SCS.cpp[SCS.cpp]
@@ -57,7 +59,7 @@ parts:
 * hardware interface program: link:src/SCSerial.h[SCSerial.h] and
   link:src/SCSerial.cpp[SCSerial.cpp]
 
-2.) There are differences in the memory table definitions of different
+3.) There are differences in the memory table definitions of different
 series of servos.
 
 === Contributors
