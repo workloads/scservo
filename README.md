@@ -31,11 +31,11 @@ For usage examples, see the [examples](./examples) directory.
 
 ### Installation via Arduino IDE
 
-For installation via the Arduino IDE, see [docs.arduino.cc](https://docs.arduino.cc/software/ide-v2/tutorials/ide-v2-installing-a-library/). 
+For installation via the Arduino IDE, see [docs.arduino.cc](https://docs.arduino.cc/software/ide-v2/tutorials/ide-v2-installing-a-library/).
 
 ### Installation via Arduino CLI
 
-To install the latest version using `arduino-cli`, use the following command: 
+To install the latest version using `arduino-cli`, use the following command:
 
 ```shell
 arduino-cli lib install SCServo
@@ -63,7 +63,7 @@ Once the installation of unsafe libraries is enabled, the `SCServo` library may 
 
 ```shell
 arduino-cli lib install --git-url "https://github.com/workloads/scservo.git"
-
+```
 
 ## Development
 
@@ -114,6 +114,12 @@ parts:
   [src/SCSerial.cpp](src/SCSerial.cpp)
 
 Note that there are differences in the memory table definitions of different series of servos.
+
+### Release Ingressing
+
+New (GitHub) releases of this library are automatically ingressed by the Arduino Library Manager.
+
+A log of currently "visible" releases can be found at [downloads.arduino.cc](https://downloads.arduino.cc/libraries/logs/github.com/workloads/scservo/).
 
 ## Contributors
 
